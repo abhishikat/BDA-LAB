@@ -29,3 +29,5 @@
     5. Write a query to show that a student with id 112 has taken a book “BDA” 2 times.
     6. Export the created column to a csv file
     7. Import a given csv dataset from local file system into Cassandra column family
+### Experiment #3: Perform the following DB operations using MongoDB.
+    Create a database “Student” with the following attributes  Rollno, Age, ContactNo, Email-Id.2. Insert appropriate values3. Write query to update Email-Id of a student with rollno 10.4. Replace the student name from “ABC” to “FEM” of rollno 11.5. Export the created table into local file system6. Drop the table7. Import a given csv dataset from local file system into mongodb collection.
