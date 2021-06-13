@@ -1,0 +1,16 @@
+val textFile = sc.textFile("./input.txt")
+val counts = textFile.flatMap(line => line.split(" ")).map(word => (word, 1)).reduceByKey((a, b) => a + b)
+
+import scala.collection.immutable.ListMap
+val sorted=ListMap(counts.collect.sortWith(_._2 > _._2):_*)
+
+println(sorted)
+for((k,v)<-sorted)
+{
+  if(v>4)
+    {
+     print(k+",")
+       print(v)
+       println()
+     }
+}
